@@ -82,8 +82,8 @@ def main():
     for sp_name in sp_list:
 
         print('prepare convert ', sp_name)
-        save_images_dir = os.path.join(SAVE_DIR, sp_name, "images")
-        save_labels_dir = os.path.join(SAVE_DIR, sp_name, "labels")
+        save_images_dir = os.path.join(SAVE_DIR, "images", sp_name)
+        save_labels_dir = os.path.join(SAVE_DIR, "labels", sp_name)
         moyan.pathExit(save_images_dir)
         moyan.pathExit(save_labels_dir)
         
